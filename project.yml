@@ -1,0 +1,26 @@
+name: TikTokHDUploader
+options:
+  bundleIdPrefix: com.tiktok
+  deploymentTarget:
+    iOS: "16.0"
+
+targets:
+  TikTokHDUploader:
+    type: application
+    platform: iOS
+    sources:
+      - path: .
+        excludes:
+          - "project.yml"
+          - "README.md"
+          - ".github"
+          - ".git"
+          - ".gitignore"
+    info:
+      path: Info.plist
+    settings:
+      base:
+        PRODUCT_NAME: "TikTok HD Uploader"
+        SWIFT_VERSION: "5.9"
+        ENABLE_BITCODE: NO
+        INFOPLIST_FILE: Info.plist
