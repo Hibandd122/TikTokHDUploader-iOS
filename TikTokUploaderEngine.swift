@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import CryptoKit
 
 public struct TagItem: Identifiable, Hashable {
     public let id = UUID()
